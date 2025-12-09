@@ -1,0 +1,450 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dokumen HTML - SMA Negeri 2 Playen</title>
+    <style>
+        /* Reset dasar */
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        
+        /* Styling dari user */
+        body {
+    font-family: Arial, sans-serif;
+    padding: 20px;
+}
+
+h1 {
+    color: #1a5f7a;
+}
+    </style>
+</head>
+<body>
+    <!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RPP & LKS Interaktif - Pembelajaran Mendalam (PM): Exposition Text</title>
+    <style>
+        :root {
+            --color-berkesadaran: #3f51b5; /* Indigo */
+            --color-bermakna: #4caf50; /* Green */
+            --color-menggembirakan: #ff9800; /* Orange */
+            --color-primary: #1e88e5; /* Blue */
+            --color-bg-light: #f5f5f5;
+            --color-card-bg: #ffffff;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: var(--color-bg-light);
+            line-height: 1.6;
+        }
+
+        header {
+            background-color: var(--color-primary);
+            color: white;
+            padding: 30px 20px;
+            text-align: center;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 2em;
+        }
+
+        .container {
+            width: 90%;
+            max-width: 1200px;
+            margin: 20px auto;
+            padding: 20px;
+        }
+
+        section {
+            background-color: var(--color-card-bg);
+            padding: 20px;
+            margin-bottom: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+        }
+
+        h2 {
+            color: var(--color-primary);
+            border-bottom: 3px solid var(--color-primary);
+            padding-bottom: 10px;
+            margin-top: 0;
+        }
+
+        h3 {
+            color: #333;
+            margin-top: 20px;
+            padding-left: 10px;
+            border-left: 4px solid var(--color-bermakna);
+        }
+
+        /* Accordion Style */
+        .accordion {
+            background-color: #eee;
+            color: #444;
+            cursor: pointer;
+            padding: 18px;
+            width: 100%;
+            border: none;
+            text-align: left;
+            outline: none;
+            font-size: 1.1em;
+            transition: 0.4s;
+            border-radius: 4px;
+            margin-bottom: 5px;
+        }
+
+        .active, .accordion:hover {
+            background-color: #ccc;
+        }
+
+        .panel {
+            padding: 0 18px;
+            background-color: white;
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.2s ease-out;
+            margin-bottom: 10px;
+            border-radius: 4px;
+            border: 1px solid #ddd;
+        }
+        
+        /* Table Styles */
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 15px;
+        }
+
+        th, td {
+            border: 1px solid #ddd;
+            padding: 12px;
+            text-align: left;
+        }
+
+        th {
+            background-color: var(--color-primary);
+            color: white;
+        }
+
+        /* PM Principle Tags */
+        .tag {
+            display: inline-block;
+            padding: 5px 10px;
+            border-radius: 20px;
+            font-size: 0.8em;
+            font-weight: bold;
+            margin-right: 5px;
+            margin-bottom: 5px;
+            color: white;
+        }
+
+        .tag.berkesadaran { background-color: var(--color-berkesadaran); }
+        .tag.bermakna { background-color: var(--color-bermakna); }
+        .tag.menggembirakan { background-color: var(--color-menggembirakan); }
+        .tag.lks { background-color: #e53935; /* Red */ }
+        .tag.rpp { background-color: var(--color-primary); }
+
+        /* Interaktif LKS Styles */
+        .lks-activity {
+            border: 2px dashed #ccc;
+            padding: 15px;
+            margin-bottom: 15px;
+            border-radius: 6px;
+        }
+
+        .lks-activity input[type="text"], .lks-activity textarea {
+            width: calc(100% - 22px);
+            padding: 10px;
+            margin-top: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+
+        .lks-activity button {
+            background-color: var(--color-menggembirakan);
+            color: white;
+            padding: 8px 15px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            margin-top: 10px;
+            transition: background-color 0.3s;
+        }
+        
+        .lks-activity button:hover {
+            background-color: #e65100;
+        }
+        
+        .hint-text {
+            color: #e53935;
+            font-style: italic;
+            margin-top: 10px;
+            display: none; /* Hidden by default */
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>RPP Interaktif Deep Learning (PM)</h1>
+        <p>Mata Pelajaran: Bahasa Inggris Kelas XII | Topik: Exposition Text & The Need for Physical Exercise/AI</p>
+    </header>
+
+    <div class="container">
+
+        <section>
+            <h2>📝 Rencana Pelaksanaan Pembelajaran (RPP) Lengkap</h2>
+            <p>Model Pembelajaran: **Problem Based Learning (PBL)** | Prinsip PM: <span class="tag berkesadaran">Berkesadaran</span> <span class="tag bermakna">Bermakna</span> <span class="tag menggembirakan">Menggembirakan</span></p>
+
+            <button class="accordion">🎯 Tujuan Pembelajaran (C2 - C6)</button>
+            <div class="panel">
+                <p>Mengacu pada CP: Memahami cara kerja dan penggunaan mesin pencari di internet.</p>
+                <ul>
+                    <li>**Memahami (C2):** Peserta didik dapat **memahami** fungsi sosial dan struktur teks eksposisi dengan cermat.</li>
+                    <li>**Menerapkan (C3):** Peserta didik dapat **menerapkan** langkah-langkah merespon argumen dalam teks eksposisi secara logis.</li>
+                    <li>**Menganalisis (C4):** Peserta didik dapat **menganalisis** hubungan antar ide dan bukti pendukung dalam teks eksposisi dengan teliti.</li>
+                    <li>**Mengevaluasi (C5):** Peserta didik dapat **mengevaluasi** kredibilitas sumber dan kekuatan argumen yang disajikan dalam teks eksposisi.</li>
+                    <li>**Mencipta (C6):** Peserta didik dapat **mencipta** sebuah respons kritis terhadap isu yang diangkat dalam teks eksposisi.</li>
+                </ul>
+            </div>
+
+            <button class="accordion">💡 Kegiatan Inti (PBL Synthesis)</button>
+            <div class="panel">
+                <h3>Kegiatan Inti (60 Menit)</h3>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Tahapan PM</th>
+                            <th>Prinsip PM</th>
+                            <th>Sintak PBL</th>
+                            <th>Aktivitas Pembelajaran</th>
+                            <th>Profil Lulusan</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>**MEMAHAMI**</td>
+                            <td><span class="tag berkesadaran">Berkesadaran</span></td>
+                            <td>Orientasi Peserta Didik pada Masalah</td>
+                            <td>Guru menyajikan teks, siswa membaca dalam hati dan menggarisbawahi argumen utama.</td>
+                            <td>Mandiri</td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td><span class="tag bermakna">Bermakna</span></td>
+                            <td>Mengorganisasi Peserta Didik untuk Belajar</td>
+                            <td>Kelompok mengidentifikasi Tesis, Argumen, dan Reiteration (Struktur Teks).</td>
+                            <td>Kolaborasi</td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td><span class="tag menggembirakan">Menggembirakan</span></td>
+                            <td>Mengorganisasi Peserta Didik untuk Belajar</td>
+                            <td>Setiap kelompok mencatat temuan di platform digital (Google Docs) dan presentasi cepat (*sharing*).</td>
+                            <td>Kreatif</td>
+                        </tr>
+                        <tr>
+                            <td>**MENGAPLIKASI**</td>
+                            <td><span class="tag berkesadaran">Berkesadaran</span></td>
+                            <td>Membimbing Penyelidikan Individu/Kelompok</td>
+                            <td>Kelompok mencari *counter-argument* atau bukti pendukung tambahan menggunakan mesin pencari (**Penyelidikan Terpimpin**).</td>
+                            <td>Mandiri</td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td><span class="tag bermakna">Bermakna</span></td>
+                            <td>Membimbing Penyelidikan Individu/Kelompok</td>
+                            <td>Kelompok menyusun respons kritis (setuju/tidak setuju) yang didukung data/bukti (**Diskusi Kelompok Terpimpin**).</td>
+                            <td>Kolaborasi</td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td><span class="tag menggembirakan">Menggembirakan</span></td>
+                            <td>Mengembangkan dan Menyajikan Hasil Karya</td>
+                            <td>Simulasi "debat mini" atau **Presentasi** respons kritis.</td>
+                            <td>Kreatif</td>
+                        </tr>
+                        <tr>
+                            <td>**MEREFLEKSI**</td>
+                            <td><span class="tag berkesadaran">Berkesadaran</span></td>
+                            <td>Menganalisis dan Mengevaluasi Proses</td>
+                            <td>Guru memandu siswa menilai respons kelompok lain (*peer-assessment*), fokus pada proses analisis mereka.</td>
+                            <td>Mandiri</td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td><span class="tag bermakna">Bermakna</span></td>
+                            <td>Menganalisis dan Mengevaluasi Proses</td>
+                            <td>Guru meminta siswa menghubungkan materi dengan pengalaman pribadi (misal: menyikapi berita di media sosial).</td>
+                            <td>Kolaborasi</td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td><span class="tag menggembirakan">Menggembirakan</span></td>
+                            <td>Menganalisis dan Mengevaluasi Proses</td>
+                            <td>Siswa menulis satu kalimat refleksi (**Jurnal Diri**) tentang keterampilan yang paling mereka kuasai hari ini.</td>
+                            <td>Kreatif</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            </section>
+        
+        <section>
+            <h2><span class="tag lks">LKS Interaktif</span>: Embracing AI in the English Classroom</h2>
+            <p>Teks Sumber: *In recent years, artificial intelligence (AI) has begun to reshape how English is taught and learned...*</p>
+
+            <h3><span class="tag menggembirakan">Awal</span>: Latihan Kosakata & Quick Check</h3>
+            <div class="lks-activity">
+                <h4>Aktivitas 1: Contextual Matching (Individu)</h4>
+                <p>1. Reshape, 2. Facet, 3. Explicit, 4. Adaptability, 5. Integrated.</p>
+                <p>Tuliskan urutan huruf Definisi (A-E) yang benar: <input type="text" id="vocab-match" placeholder="Contoh: D, E, C, B, A"></p>
+                <button onclick="checkVocab()">Cek Jawaban</button>
+                <p class="hint-text" id="vocab-hint">Jawaban: D, E, C, B, A. (Reshape: Mengubah bentuk; Facet: Salah satu aspek; Explicit: Jelas; Adaptability: Kemampuan disesuaikan; Integrated: Menggabungkan.)</p>
+            </div>
+
+            <h3><span class="tag bermakna">Inti</span>: Information Analysis (Kelompok)</h3>
+            <div class="lks-activity">
+                <h4>Aktivitas 3: AI Feature Analysis (Kolaborasi)</h4>
+                <p>Identifikasi 3 Tipe AI dan Perannya:</p>
+                <label>Tipe 1: Rule-based AI</label>
+                <textarea rows="2" placeholder="Karakteristik: Fixed outputs, Contoh: Instant feedback pada multiple-choice."></textarea>
+                <label>Tipe 2: Data-driven AI</label>
+                <textarea rows="2" placeholder="Karakteristik: Learns from student data patterns, Contoh: merekomendasikan tugas yang disesuaikan."></textarea>
+                <label>Tipe 3: Generative AI</label>
+                <textarea rows="2" placeholder="Karakteristik: Uses vast amounts of data, Contoh: Generate practice texts, sample dialogues."></textarea>
+            </div>
+
+            <h3><span class="tag berkesadaran">Evaluasi</span>: Individual Critical Response</h3>
+            <div class="lks-activity">
+                <h4>Aktivitas 5: My Critical Response (Individu)</h4>
+                <p>Menurut Anda, dari semua jenis AI yang disebutkan, manakah yang paling berpotensi untuk meningkatkan keterampilan *speaking* Anda? Jelaskan mengapa!</p>
+                <textarea rows="4" placeholder="Tuliskan respons kritis Anda di sini (fokus pada GenAI/Virtual Conversation Partners dan jelaskan alasannya)..."></textarea>
+                <p class="hint-text" id="critical-response-prompt">Tujuan: Melatih C5 (Mengevaluasi) dengan menghubungkan materi (Virtual Conversation Partners) dengan kebutuhan belajar pribadi (Speaking Practice).</p>
+            </div>
+        </section>
+
+        <section>
+            <h2>✨ Analisis & Saran Konkret (Meningkatkan Prinsip PM)</h2>
+            <p>Saran ini berfokus pada RPP "The Need for Physical Exercise" untuk memperkuat prinsip <span class="tag bermakna">Bermakna</span> dan <span class="tag menggembirakan">Menggembirakan</span>.</p>
+
+            <button class="accordion">Saran Konkret untuk Menggembirakan (Joyful Learning)</button>
+            <div class="panel">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Bagian RPP</th>
+                            <th>Aktivitas Saat Ini (Saat Ini)</th>
+                            <th>Saran Konkret (Menggembirakan)</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Awal (Apersepsi)</td>
+                            <td>*Small discussion about their physical exercise habbit*.</td>
+                            <td>**"Physical Activity Quick Poll & Stand Up If..."**: Gunakan polling anonim + aktivitas gerak ringan untuk memantik energi awal.</td>
+                        </tr>
+                        <tr>
+                            <td>Memahami</td>
+                            <td>*Fill the blank while listening*.</td>
+                            <td>**"Blind Reading & Predict"**: Siswa memprediksi kata kunci yang hilang sebelum mendengarkan/membaca teks.</td>
+                        </tr>
+                        <tr>
+                            <td>Mengaplikasi</td>
+                            <td>*Each group presents the result of their discussion in a piece of paper*.</td>
+                            <td>**"Gallery Walk & Speed Dating Feedback"**: Mengubah presentasi pasif menjadi interaksi aktif, di mana kelompok saling memberi *feedback* 60 detik per pos.</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <button class="accordion">Saran Konkret untuk Bermakna (Meaningful Learning)</button>
+            <div class="panel">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Bagian RPP</th>
+                            <th>Aktivitas Saat Ini (Saat Ini)</th>
+                            <th>Saran Konkret (Bermakna)</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Inti (Analisis)</td>
+                            <td>*Analyze the text to find more detail information*.</td>
+                            <td>**"Data vs. Life: Prove It to Me"**: Minta siswa mencari data pendukung tambahan (statistik/grafik) secara *online* untuk memvalidasi argumen dalam teks (Lintas Disiplin: Matematika).</td>
+                        </tr>
+                        <tr>
+                            <td>Merefleksi</td>
+                            <td>*Students revise their works and creating final draft...* (Inkonsisten: merujuk ke *recipes*).</td>
+                            <td>**"My Health Manifesto & Peer Evaluation"**: Siswa merevisi teks menjadi Manifesto Pribadi (nilai personal). Evaluasi: *“Apakah argumen teman saya cukup kuat untuk meyakinkan saya mengubah kebiasaan saya?"*.</td>
+                        </tr>
+                        <tr>
+                            <td>Penutup (Refleksi)</td>
+                            <td>*Jurnal Refleksi* (Kognitif).</td>
+                            <td>**"Action Planning: From Text to Habit"**: Mengubah refleksi menjadi tindakan nyata: "Satu perubahan kebiasaan olahraga yang akan saya mulai lakukan minggu ini...".</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+        </section>
+
+    </div>
+
+    <script>
+        // JavaScript for Accordion
+        var acc = document.getElementsByClassName("accordion");
+        var i;
+
+        for (i = 0; i < acc.length; i++) {
+            acc[i].addEventListener("click", function() {
+                this.classList.toggle("active");
+                var panel = this.nextElementSibling;
+                if (panel.style.maxHeight) {
+                    panel.style.maxHeight = null;
+                } else {
+                    panel.style.maxHeight = panel.scrollHeight + "px";
+                }
+            });
+        }
+
+        // JavaScript for LKS Interactivity (Hints)
+        function checkVocab() {
+            var input = document.getElementById('vocab-match').value.trim().toUpperCase().replace(/\s/g, '');
+            var hint = document.getElementById('vocab-hint');
+            
+            if (input === 'D,E,C,B,A' || input === 'DECB') {
+                hint.textContent = "Jawaban TEPAT! (D: Reshape, E: Facet, C: Explicit, B: Adaptability, A: Integrated).";
+                hint.style.color = "var(--color-bermakna)";
+                hint.style.display = "block";
+            } else {
+                hint.textContent = "Jawaban Anda belum tepat. Cek kembali konteks di teks. (Hint: D: Reshape, E: Facet, C: Explicit, B: Adaptability, A: Integrated).";
+                hint.style.color = "#e53935";
+                hint.style.display = "block";
+            }
+        }
+        
+        // Example for showing the critical response prompt
+        document.querySelector('#critical-response-prompt').style.display = 'block';
+
+    </script>
+
+</body>
+</html>
+    
+    <script>
+        console.log('Media Pembelajaran Interaktif');
+    </script>
+</body>
+</html>
